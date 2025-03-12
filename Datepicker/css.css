@@ -1,0 +1,101 @@
+
+[type="date"]::-webkit-inner-spin-button {
+    display: none;
+}
+[type="date"]::-webkit-calendar-picker-indicator {
+    opacity: 0;
+}
+[type="date"]::-webkit-clear-button {
+    -webkit-appearance: none;
+    display: none;
+}
+.container {
+    width: 400px;
+    height: 100%;
+    font: 13px/1.4 Geneva, 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    border: 1px solid black;
+}
+.info{
+    height: 40px;
+    border-bottom: 1px solid black;
+    width: 100%;
+    position: relative;
+    line-height: 40px;
+}
+#info{
+    margin-left: 3%;
+}
+div.far.fa-calendar-alt{
+    position: absolute;
+    right: 3%;
+    font-size: 18px;
+    top: 25%;
+}
+
+.fa-calendar-alt:before{
+    position: absolute;
+    right: 3%;
+    font-size: 18px;
+    top: 25%;
+
+}
+.content{
+    margin: 0 3%;
+}
+select{
+    width: 100%;
+    margin-top:3%;
+    height: 40px;
+    padding-left: 3%;
+    appearance: none;
+    -webkit-appearance: none;
+    box-shadow: inset 0 3px 6px rgba(0,0,0,0.1);
+    -moz-appearance: none;
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTI2D7wa5k57owKGvbYOugUrtJwYrsy4CyUGEjJEr1M2fDfQgHV) 97% / 5% no-repeat ;
+}
+
+.content form input[type="date"]{
+    width: 180px;
+    border: 1px solid #c4c4c4;
+    border-radius: 1px;
+    background-color: #fff;
+    box-shadow: inset 0 3px 6px rgba(0,0,0,0.1);
+    height: 40px;
+    position: relative;
+}
+dl{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+dd{
+    margin-left: 0;
+    position: relative;
+}
+.btn{
+    text-align: right;
+    margin-bottom:3%;
+}
+.button {
+    display: inline-block;
+    text-transform: uppercase;
+    text-align: center;
+    height: 30px;
+    width: 85px;
+    border-radius: 1px;
+    border: 1px solid #c4c4c4;
+    box-shadow: inset 0 1px 6px rgba(0,0,0,0.1);
+    background-color: #fff;
+}
+.apply{
+    background-color: #ed1c24;
+    color: white;
+}
+.button:hover {
+    background: #808080;
+    color: white;
+    cursor: pointer;
+    cursor: hand;
+    box-shadow: 1px 1px 6px rgba(0,0,0,0.65);
+}
+

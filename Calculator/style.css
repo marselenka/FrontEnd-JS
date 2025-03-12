@@ -1,0 +1,113 @@
+.calculator {
+    width: 250px;
+    height: 100%;
+    border: 2px solid black;
+    margin: 30px auto 0;
+    text-align: center;
+    background-color: #232220;
+    box-shadow: 0 0 30px grey, 0 0 0 5px #1b191a inset;
+    border-radius: 30px;
+    color: white;
+    position: relative;
+}
+
+.calculator__form {
+    height: 100%;
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    color: #fbf9f7;
+}
+
+.header_title {
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.model_title {
+    display: block;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 20px;
+}
+
+.model_spec {
+    font-size: 10px
+}
+
+.calculator__display {
+    height: 50px;
+    margin: 0 0 20px -3px;
+    width: 100%;
+    border: 1px solid darkslateblue;
+    padding: 4px 2px;
+    text-align: right;
+    font: 700 16px/1 Arial, sans-serif;
+    color: #051f3d;
+    background-color: #7ea7b0;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px 1px #333 inset, 0 0 0 7px #1b191a;
+    font-size: 35px;
+}
+
+.calculator__row {
+    margin: 10px 0;
+    display: grid;
+    grid-template: repeat(5, 1fr)/repeat(4, 1fr);
+    grid-gap: 10px 10px;
+}
+
+.calculator__button, .calculator__key--plus {
+    width: 41px;
+    height: 35px;
+    cursor: pointer;
+    border: none;
+    transition: all .2s;
+    text-transform: uppercase;
+}
+
+.calculator__button, .calculator__key--plus {
+    background-color: #000000;
+    color: white;
+    height: 30px;
+    width: 45px;
+    box-shadow: 2px 2px 0 0 #0f0e0d;
+    border-radius: 3px 3px 7px 7px;
+    cursor: pointer;
+    border: none;
+    transition: all .2s;
+    text-transform: uppercase;
+}
+
+.calculator__key--plus {
+    grid-row: 4 / span 3;
+    grid-column: 4/ span 1;
+    height: 72px;
+}
+
+.calculator__space {
+    grid-column-start: span 2;
+}
+
+.calculator__button:hover, .calculator__key--plus:hover {
+    background-color: #FFBA75;
+    box-shadow: 0 0 2px #FFBA75, inset 0 -20px 1px #FF8000;
+    border-top: 2px solid #FFF;
+    border-right: 2px solid #FFF;
+    border-bottom: 2px solid #AE5700;
+    border-left: 2px solid #AE5700;
+}
+
+.calculator__clear {
+    color: #FFF;
+    background-color: #D20000;
+    box-shadow: 0 0 2px #030303, inset 0 -20px 1px #B00000, 2px 2px 0 0 #0f0e0d;
+}
+
+.calculator__button:focus, .calculator__key--plus:focus {
+    outline: none;
+}

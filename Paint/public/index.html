@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <script src="model.js" defer></script>
+    <script src="myMain.js" defer></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <title>PaintCanvas</title>
+    <link rel="shortcut icon" href="#"/>
+</head>
+<body>
+
+<div class="paint">
+    <header class="toolBar">
+        <span class="toolBar_logo">Paint Canvas</span>
+        <input type="range" class="toolBar_range" id="size" min="1" max="10" onchange="changeSize(event);">
+        <input type="color" id="color" value="#000000">
+    </header>
+    <canvas id="canvas" width="1280" height="720"></canvas>
+</div>
+
+</body>
+</html>

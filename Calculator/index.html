@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+    <script src="model.js"></script>
+</head>
+<body>
+<div class="calculator">
+
+    <form class="calculator__form">
+        <header class="header">
+            <span class="header_title">CITIZEN</span>
+
+            <div class="model">
+                <span class="model_title">LC-110N</span>
+                <span class="model_spec">AUTO POWER OFF</span>
+            </div>
+        </header>
+
+        <input class="calculator__display" type="text" disabled/>
+
+        <div class="calculator__row">
+            <button type="button" value="c" id="ac" class="calculator__button calculator__clear">AC</button>
+            <div class="calculator__space"></div>
+            <button type="button" value="/" class="operator calculator__button">/</button>
+            <button type="button" value="7" class="digit calculator__button">7</button>
+            <button type="button" value="8" class="digit calculator__button">8</button>
+            <button type="button" value="9" class="digit calculator__button">9</button>
+            <button type="button" value="*" class="operator calculator__button">*</button>
+            <button type="button" value="4" class="digit calculator__button">4</button>
+            <button type="button" value="5" class="digit calculator__button">5</button>
+            <button type="button" value="6" class="digit calculator__button">6</button>
+            <button type="button" value="-" class="operator calculator__button">-</button>
+            <button type="button" value="1" class="digit calculator__button">1</button>
+            <button type="button" value="2" class="digit calculator__button">2</button>
+            <button type="button" value="3" class="digit calculator__button">3</button>
+            <button type="button" value="0" class="digit calculator__button">0</button>
+            <button type="button" value="." class=" decimal calculator__button">.</button>
+            <button type="button" value="=" id="equal" class="equal-sign calculator__button">=</button>
+            <button type="button" value="+" class="operator calculator__button calculator__key--plus">+</button>
+        </div>
+    </form>
+
+</div>
+</body>
+</html>
